@@ -1,0 +1,206 @@
+/* цвет основного текста #757575 */
+/* цвет вторичного текста ##212121 */
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+/* вторичный цвет фона F5F4FA */
+/* логотип #000000 */
+/* footer adress #FFFFFF 60% */
+/* Footer #2F303A */
+
+:root{
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --wite: #FFFFFF;
+    --footer: #2F303A;
+    --backround-color: #F5F4FA;
+    --logo:#000000;
+    --footer-adress: rgba(255, 255, 255, 0.6);
+}
+body {
+   background-color: var(--wite);
+   color: var(--primary-text-color);
+   font-family: 'Roboto', sans-serif;
+   letter-spacing: 0.03em;
+   font-size: 14px;
+
+}
+ .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+address{
+    font-style: normal;
+}
+/* Logo */
+.logo {
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;        
+    text-decoration: none;
+}
+.logo-header{
+    color: var(--logo);
+}
+.logo-footer{
+   color: var(--wite);
+}
+ul{
+    list-style: none;
+}
+/* Site nav */
+.site-nav-list .link.curent{
+    color: var(--accent-color);
+}
+.site-nav-list .link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.site-nav-list .adress-link{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14; 
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.site-nav-list .link:hover,
+.site-nav-list .link:focus,
+.site-nav-list .adress-link:hover,
+.site-nav-list .adress-link:focus {
+   color: var(--accent-color);
+}
+/* Hero */
+.section-hero{
+    background-color: var(--footer);
+}
+.section-title-hero{
+    color: var(--wite);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.section-title{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;  
+}
+/* Benefits */
+.benefits-list .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.benefits-item {
+    line-height: 1.71;
+}
+/* Team */
+.section-team{
+    background-color: var(--backround-color) ;
+}
+.team-list .title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+.team-item{
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+/* Button */
+.button{
+    font-family: 'Roboto';
+    color: var(--wite) ;
+    background-color: var(--accent-color) ;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+/* Footer */
+.footer{
+    background-color: var(--footer);
+}
+.map-link{
+    color: var(--wite);
+    text-decoration: none;
+}
+.link-footer{
+    color: var(--footer-adress);
+    text-decoration: none;
+}
+.map-link:hover,
+.map-link:focus{
+    color: var(--accent-color);
+}
+.link-footer:hover,
+.link-footer:focus {
+    color: var(--accent-color);
+}
+.footer-list{
+    line-height: 1.71;
+}
+/* Portfolio */
+/* filters */
+.button-list{
+    color: var(--title-text-color);
+    background-color: var(--backround-color);
+}
+/* Projects */
+.projects-link{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.projects-item{
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.9;
+}
+.projects-href{
+text-decoration: none;
+}
+.button-list:hover,
+.button-list:focus{
+    color: var(--wite);
+    background-color: var(--accent-color);
+}
+.button-list{
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
