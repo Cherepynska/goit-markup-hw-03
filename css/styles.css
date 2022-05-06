@@ -58,6 +58,8 @@ address{
 }
 ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 /* Site nav */
 .site-nav-list .link.curent{
@@ -85,6 +87,22 @@ ul{
    color: var(--accent-color);
 }
 /* Hero */
+.button-hero{
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--wite);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    display: inline-block;
+    padding: 10px 32px;
+    min-width: 136px;
+    border-radius: 4px;
+}
 .section-hero{
     background-color: var(--footer);
 }
@@ -96,6 +114,8 @@ ul{
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 .section-title{
     color: var(--title-text-color);
