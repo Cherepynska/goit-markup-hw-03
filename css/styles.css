@@ -41,7 +41,22 @@ body {
 address{
     font-style: normal;
 }
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+h3, p{
+    margin-top: 0;
+}
 /* Logo */
+.logo, .logo-header {
+    display: block;
+    display: flex;
+    align-items: center;
+}
 .logo {
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
@@ -52,6 +67,7 @@ address{
 }
 .logo-header{
     color: var(--logo);
+    margin-bottom: 0;
 }
 .logo-footer{
    color: var(--wite);
@@ -62,15 +78,35 @@ ul{
     margin: 0;
 }
 /* Site nav */
+.site-nav-list{
+    margin-left: 93px;
+}
+.site-nav-list.adress{
+    margin-left: auto;
+}
+.container.nav{
+    display: flex;
+    align-items: center;
+}
 .site-nav-list .link.curent{
     color: var(--accent-color);
 }
-.site-nav-list .link {
+.site-nav-list, .main-nav{
+    display: flex;
+}
+.site-nav-list .item:not(:last-child){
+    margin-right: 50px;
+}
+.site-nav-list .link, .adress-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-text-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
+    text-decoration: none; 
 }
 .site-nav-list .adress-link{
     color: var(--primary-text-color);
@@ -105,6 +141,7 @@ ul{
 }
 .section-hero{
     background-color: var(--footer);
+    text-align: center;
 }
 .section-title-hero{
     color: var(--wite);
@@ -122,22 +159,45 @@ ul{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;  
+    text-align: center; 
+    margin-top: 0px;
+    margin-bottom: 50px; 
 }
 /* Benefits */
+.benefits-list{
+    display: flex;
+}
+.benefits-list .item:not(:last-child){
+    margin-right: 30px;
+}
 .benefits-list .title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin: 0 0 10px 0;
 }
 .benefits-item {
     line-height: 1.71;
+    margin: 0;
+}
+/* Doing */
+.list{
+    display: flex;
+}
+.list .item:not(:last-child), 
+.team-list .item:not(:last-child){
+margin-right: 30px;
 }
 /* Team */
+.team-list{
+    display: flex;
+}
 .section-team{
     background-color: var(--backround-color) ;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .team-list .title {
     color: var(--title-text-color);
@@ -145,11 +205,14 @@ ul{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 .team-item{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-bottom: 30px;
 }
 /* Button */
 .button{
@@ -189,24 +252,54 @@ ul{
 .footer-list{
     line-height: 1.71;
 }
+.container.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 /* Portfolio */
 /* filters */
+.filterd-list{
+    display: flex;
+    justify-content: center;
+}
 .button-list{
     color: var(--title-text-color);
     background-color: var(--backround-color);
+    border-radius: 4px;
+    margin-bottom: 50px;
+}   
+.filterd-list .item:not(:last-child){
+    margin-right: 8px;
 }
 /* Projects */
+.projects-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+}
+.projects-list .item{
+    margin-right: 30px;
+}
+.projects-list .item:nth-child(3n){
+    margin-right: 0;
+}
+.projects-list .item:nth-child(-n+3){
+    margin-bottom: 30px;
+}
 .projects-link{
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 .projects-item{
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.9;
+    margin-bottom: 20px;
 }
 .projects-href{
 text-decoration: none;
