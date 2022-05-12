@@ -142,6 +142,8 @@ img{
     padding: 10px 32px;
     border-radius: 4px;
     border: none;
+    min-width: 200px;
+    min-height: 50px;
 }
 .section-hero{
     background-color: var(--footer);
@@ -290,6 +292,7 @@ margin-right: 30px;
 .filterd-list{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .button-list{
     padding: 6px 22px;
