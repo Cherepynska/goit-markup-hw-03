@@ -41,7 +41,7 @@ body {
 .container{
     margin-left: auto;
     margin-right: auto;
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -311,6 +311,8 @@ margin-right: 30px;
     border-top: none;
     margin-right: 24px;
     width: 369.98px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .projects-list{
     display: flex;
@@ -333,14 +335,12 @@ margin-right: 30px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    padding-top: 20px;
     margin-bottom: 4px;
 }
 .projects-item{
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.9;
-    margin-bottom: 20px;
 }
 .projects-href{
     text-decoration: none;
