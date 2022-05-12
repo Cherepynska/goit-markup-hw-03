@@ -249,6 +249,9 @@ margin-right: 30px;
     cursor: pointer;
 }
 /* Footer */
+.logo.footer{
+    margin-bottom: 20px;
+}
 .footer-item:not(:last-child){
     margin-bottom: 9px;
 }
@@ -274,7 +277,6 @@ margin-right: 30px;
 .footer-list{
     font-style: normal;
     line-height: 1.71;
-    margin-top: 20px;
 }
 .main-footer{
     padding-top: 60px;
