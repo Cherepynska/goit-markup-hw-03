@@ -45,9 +45,13 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 h1, h2, h3, p{
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 img{
     display: block;
@@ -61,6 +65,7 @@ img{
 }
 /* Logo */
 .logo {
+    display: block;
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -78,11 +83,6 @@ img{
 .logo-footer{
    color: var(--wite);
 }
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 /* Site nav */
 .site-nav-list{
     margin-left: 93px;
@@ -90,7 +90,7 @@ ul{
 .site-nav-list.adress{
     margin-left: auto;
 }
-.container.nav{
+.container.nav, .main-nav{
     display: flex;
     align-items: center;
 }
